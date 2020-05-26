@@ -5,7 +5,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 
-namespace ToDoApII.Models
+namespace RentApartment.Models
 {
     public class Visitor
     {

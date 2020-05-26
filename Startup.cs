@@ -3,10 +3,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using ToDoApII.Models;
+using RentApartment.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace ToDoApII
+namespace RentApartment
 {
     public class Startup
     {
@@ -20,8 +20,8 @@ namespace ToDoApII
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<TodoContext>(opt => 
-               opt.UseInMemoryDatabase("TodoList"));
+            services.AddDbContext<VisitorContext>(opt => 
+               opt.UseInMemoryDatabase("VisitorList"));
             services.AddControllers();
         }
 
